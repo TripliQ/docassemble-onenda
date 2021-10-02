@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.onenda',
       version='0.0.1',
       description=('A docassemble extension.'),
-      long_description='# docassemble.onenda\n\nA docassemble extension.\n\n## Author\n\nFelix Vemmer, felix.vemmer@tripliq.com\n\n',
+      long_description='# docassemble.onenda\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nFelix Vemmer, felix.vemmer@tripliq.com\r\n\r\n',
       long_description_content_type='text/markdown',
       author='Felix Vemmer',
       author_email='felix.vemmer@tripliq.com',
