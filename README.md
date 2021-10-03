@@ -1,6 +1,6 @@
 # docassemble.onenda
 
-A docassemble extension.
+A docassemble extension for oneNDA.
 
 ## Author
 
