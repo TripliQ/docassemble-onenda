@@ -109,6 +109,11 @@ objects:
   - party_one: Person  
   - party_two: Person
 ---
+segment:
+  id: Question Asked
+  arguments:
+    question: Details Party One
+    count: True
 question: |
   Please complete the following questions for party one
 fields:
@@ -144,6 +149,11 @@ fields:
 progress: 40
 section: party_one_section
 ---
+segment:
+  id: Question Asked
+  arguments:
+    question: Details Party Two
+    count: True
 question: |
   Please complete the following questions for party two
 fields:
@@ -179,6 +189,11 @@ fields:
 progress: 60
 section: party_two_section
 ---
+segment:
+  id: Question Asked
+  arguments:
+    question: Terms
+    count: True
 question: |
   Please complete the following questions
 fields:
@@ -198,6 +213,11 @@ fields:
 progress: 80
 section: terms_section
 ---
+segment:
+  id: Question Asked
+  arguments:
+    question: Signatures
+    count: True
 question: |
   Optionally sign the NDA
 fields:
@@ -208,6 +228,11 @@ fields:
 progress: 85
 section: signature_section
 ---
+segment:
+  id: Question Asked
+  arguments:
+    question: Signature Party One
+    count: True
 question: |
  Signature for party one
 signature: party_one.signature
@@ -216,6 +241,11 @@ under: |
 progress: 90
 section: signature_section
 ---
+segment:
+  id: Question Asked
+  arguments:
+    question: Signature Party Two
+    count: True
 question: |
  Signature for party two
 signature: party_two.signature
