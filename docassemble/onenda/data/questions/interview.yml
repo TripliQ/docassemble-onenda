@@ -1,0 +1,255 @@
+### METADATA ###
+metadata:
+  unlisted: True
+  title:  |
+    TripliQ oneNDA 
+  short title: |
+    oneNDA
+  tab title: |
+    oneNDA
+  description: |
+    Create your free Non Disclosure Agreement
+  subtitle: |
+    oneNDA
+  authors:
+    - name: Felix Vemmer
+      organization: TripliQ
+---
+segment id: Interview Started
+ga id: Interview Started
+question: |
+  Create your free Non Disclosure Agreement
+subquestion: |
+  ${ static_image('undraw_Terms_re_6ak4.svg', width='70%') }
+  <br>
+  <br>
+  ##### Save time, costs and build better relationships
+  <br>
+under: |
+  ##### In cooperation with<br/>
+  ${ static_image('slfenk0e9sr1r7cavr9jpx9a8y1b.png', width='100%') }
+continue button field: intro_screen
+progress: 20
+section: start_section
+---
+segment id: NDA Completed
+ga id: Interview Completed
+event: final_screen
+question: |
+  Your NDA is ready! 🎉
+subquestion: |
+  ${ static_image('undraw_Done_re_oak4.svg') }
+  <br>
+  <br>
+
+  %if get_language() == 'en':
+  <!-- TrustBox widget - Review Collector -->
+  <div id='trustbox' class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="5fd675847c75250001e69adc" data-style-height="52px" data-style-width="100%">
+  <a href="https://www.trustpilot.com/review/tripliq.com" target="_blank" rel="noopener">Trustpilot</a>
+  </div>
+  % else:
+  <div id='trustbox' class="trustpilot-widget" data-locale="de-DE" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="5fd675847c75250001e69adc" data-style-height="52px" data-style-width="100%">
+  <a href="https://de.trustpilot.com/review/tripliq.com" target="_blank" rel="noopener">Trustpilot</a>
+  </div>
+  <!-- End TrustBox widget -->
+  % endif
+
+right: |
+  ##### In cooperation with<br/>
+  ${ static_image('slfenk0e9sr1r7cavr9jpx9a8y1b.png', width='100%') }
+script: |
+  <script>
+    const trustbox = document.getElementById('trustbox');
+    window.Trustpilot.loadFromElement(trustbox);
+  </script>
+attachment code: final_document
+section: completed_section
+progress: 100
+---
+attachment:
+  name: oneNDA
+  filename: oneNDA
+  variable name: final_document
+  docx template file: oneNDA.docx
+  allow emailing: True
+  valid formats:
+    - pdf
+    - docx
+---
+mandatory: True
+code: |
+  set_language('en')
+  intro_screen
+  purpose
+  party_one.name
+  party_two.name
+  party_one.sign
+  party_two.sign
+  final_screen
+---
+features:
+  navigation: True
+  progress bar: True
+  progress bar method: default
+  javascript:
+    - https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js
+---
+### INTERVIEW SECTIONS ###
+sections:
+  - start_section: Start
+  - terms_section: Terms
+  - parties_section: Contract Parties
+    subsections:
+      - party_one_section: Party One
+      - party_two_section: Party Two
+  - signature_section: Signatures
+  - completed_section: NDA Completed
+---
+objects:
+  - party_one: Person  
+  - party_two: Person
+---
+segment:
+  id: Question Asked
+  arguments:
+    question: Details Party One
+    count: True
+question: |
+  Please complete the following questions for party one
+fields:
+  - Entity name: party_one.name.text
+    hint: Ace
+  - First name: party_one.name.first
+    hint: Bob
+  - Last name: party_one.name.last
+    hint: Smith
+  - Title: party_one.title
+    hint: CEO
+  - E-mail: party_one.email
+    datatype: email
+    hint: bob.smith@mail.com
+  - Address: party_one.address.address
+    hint: Sample Street 123
+  - Unit: party_one.address.unit
+    required: False
+    hint: Unit 5
+  - City: party_one.address.city
+    hint: Sample City
+  - State: party_one.address.state
+    required: False
+    hint: Sample State
+  - Postal Code: party_one.address.postal_code
+    required: False
+    hint: 12345
+  - Country: party_one.address.country
+    code: |
+      countries_list()
+    required: False
+    default: Germany
+progress: 40
+section: party_one_section
+---
+segment:
+  id: Question Asked
+  arguments:
+    question: Details Party Two
+    count: True
+question: |
+  Please complete the following questions for party two
+fields:
+  - Entity name: party_two.name.text
+    hint: Newco
+  - First name: party_two.name.first
+    hint: Amy
+  - Last name: party_two.name.last
+    hint: Doe
+  - Title: party_two.title
+    hint: Freelance Consultant
+  - E-mail: party_two.email
+    datatype: email
+    hint: amy.doe@freelance.com
+  - Address: party_two.address.address
+    hint: Sample Street 123
+  - Unit: party_two.address.unit
+    required: False
+    hint: Unit 5
+  - City: party_two.address.city
+    hint: Sample City
+  - State: party_two.address.state
+    required: False
+    hint: Sample State
+  - Postal Code: party_two.address.postal_code
+    required: False
+    hint: 12345
+  - Country: party_two.address.country
+    code: |
+      countries_list()
+    required: False
+    default: Germany
+progress: 60
+section: party_two_section
+---
+segment:
+  id: Question Asked
+  arguments:
+    question: Terms
+    count: True
+question: |
+  Please complete the following questions
+fields:
+  - Purpose: purpose
+    input type: area
+    hint: For the parties to discuss entering into a potential business relationship
+  - Jurisdiction: jurisdiction
+    hint: England and Wales 
+  - Governing Law: governing_law
+    hint: England and Wales
+  - Confidentiality start: confidentiality_start
+    datatype: date
+    default: today()
+  - Confidentiality end: confidentiality_end
+    datatype: date
+    default: date + date_interval(years=1)
+progress: 80
+section: terms_section
+---
+segment:
+  id: Question Asked
+  arguments:
+    question: Signatures
+    count: True
+question: |
+  Optionally sign the NDA
+fields:
+  - Sign for party one (${party_one.name.first}  ${party_one.name.last}): party_one.sign
+    datatype: yesnoradio
+  - Sign for party two (${party_two.name.first}  ${party_two.name.last}): party_two.sign
+    datatype: yesnoradio 
+progress: 85
+section: signature_section
+---
+segment:
+  id: Question Asked
+  arguments:
+    question: Signature Party One
+    count: True
+question: |
+ Signature for party one
+signature: party_one.signature
+under: |
+    ${party_one.name.first}  ${party_one.name.last}
+progress: 90
+section: signature_section
+---
+segment:
+  id: Question Asked
+  arguments:
+    question: Signature Party Two
+    count: True
+question: |
+ Signature for party two
+signature: party_two.signature
+under: |
+    ${party_two.name.first}  ${party_two.name.last}
+progress: 95
+section: signature_section
