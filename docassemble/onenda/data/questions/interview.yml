@@ -1,19 +1,5 @@
-### METADATA ###
-metadata:
-  unlisted: True
-  title:  |
-    TripliQ oneNDA 
-  short title: |
-    oneNDA
-  tab title: |
-    oneNDA
-  description: |
-    Create your free Non Disclosure Agreement
-  subtitle: |
-    oneNDA
-  authors:
-    - name: Felix Vemmer
-      organization: TripliQ
+include:
+  - metadata.yml
 ---
 segment id: Interview Started
 ga id: Interview Started

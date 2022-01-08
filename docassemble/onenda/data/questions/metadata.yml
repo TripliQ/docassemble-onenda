@@ -1,0 +1,66 @@
+metadata:
+  active: True
+  unlisted: False
+  price: 0
+  originalPrice: 0
+  cta:
+    de: "NDA erstellen"
+    en: "Create NDA"
+  detailTitle:
+    de: Erstelle dein kostenloses NDA mit oneNDA.
+    en: Create your free NDA with oneNDA.
+  title:
+    de: oneNDA
+    en: oneNDA
+  short title:
+    de: oneNDA
+    en: oneNDA
+  tab title:
+    en: "TripliQ | oneNDA"
+    de: "TripliQ | oneNDA"
+  description:
+    de: "Erstelle dein kostenloses Non Disclosure Agreement mit oneNDA."
+    en: "Create your free Non Disclosure Agreement with oneNDA."
+  subtitle:
+    en: "TripliQ | oneNDA"
+    de: "TripliQ | oneNDA"
+  authors:
+    - name: Felix Vemmer
+      organization: TripliQ
+  languages:
+    - de
+  partners:
+    - ehorses:
+      name: oneNDA
+      href: https://onenda.org/
+      image: docassemble.onenda/slfenk0e9sr1r7cavr9jpx9a8y1b.png
+      alt: oneNDA Logo
+  images:
+    interview: docassemble.onenda/interview_screenshot.png
+    document: docassemble.onenda/document.jpg
+  social:
+    image: docassemble.onenda:data/static/undraw_Terms_re_6ak4.svg
+    description:
+      de: "Erstelle dein kostenloses Non Disclosure Agreement mit oneNDA."
+      en: "Create your free Non Disclosure Agreement with oneNDA."
+  features:
+    de:
+      - faster:
+        title: "Schneller zum Vertrag kommen"
+        description: "In Zusammenarbeit mit unserem Partneranwalt und ehorses garantieren wir höchste Qualität. Viele Musterverträge im Internet haben fehlerhafte Klauseln. Das ist für uns ein No-Go!"
+      - cheap:
+        title: Einfacher als du denkst
+        description: Eine von Allgemeinheit stammendes, Open Source Standard-NDA das Unternehmen schnell anpassen können.
+      - better:
+        title: Verbesserung der Beziehungen
+        description: "Ein standardisierter, risikoarmer Vertrag, der beiden Parteien gefallen wird."
+    en:
+      - faster:
+        title: Get to contract quicker
+        description: oneNDA created a crowd-sourced, open-source standard NDA that companies can quickly adapt.
+      - cheap:
+        title: Save time & costs
+        description: oneNDA created a crowd-sourced, open-source standard NDA that companies can quickly adapt.
+      - better:
+        title: Improve relationships
+        description: A standardised low risk agreement both parties will love.
