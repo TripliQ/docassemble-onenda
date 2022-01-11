@@ -7,11 +7,11 @@ metadata:
     de: "NDA erstellen"
     en: "Create NDA"
   detailTitle:
-    de: Erstelle dein kostenloses NDA mit oneNDA.
-    en: Create your free NDA with oneNDA.
+    de: Kostenlose Online NDA Agreement Vorlage 2022 (PDF)
+    en: Simple PDF Online NDA Agreement Template (Free)
   title:
-    de: oneNDA
-    en: oneNDA
+    de: Non Disclosure Agreement
+    en: Non Disclosure Agreement
   short title:
     de: oneNDA
     en: oneNDA
@@ -19,16 +19,16 @@ metadata:
     en: "TripliQ | oneNDA"
     de: "TripliQ | oneNDA"
   description:
-    de: "Erstelle dein kostenloses Non Disclosure Agreement mit oneNDA."
-    en: "Create your free Non Disclosure Agreement with oneNDA."
+    de: "Nutze unser kostenloses online Tool um einfach und schnell ein simples NDA (basierend auf oneNDA) zwischen zwei Parteien zu erstellen."
+    en: "Use our free online tool to easily and quickly create a simple NDA (based on oneNDA) between two parties."
   subtitle:
-    en: "TripliQ | oneNDA"
-    de: "TripliQ | oneNDA"
+    en: "TripliQ | NDA"
+    de: "TripliQ | NDA"
   authors:
     - name: Felix Vemmer
       organization: TripliQ
   languages:
-    - de
+    - en
   partners:
     - ehorses:
       name: oneNDA
@@ -41,8 +41,8 @@ metadata:
   social:
     image: docassemble.onenda:data/static/undraw_Terms_re_6ak4.svg
     description:
-      de: "Erstelle dein kostenloses Non Disclosure Agreement mit oneNDA."
-      en: "Create your free Non Disclosure Agreement with oneNDA."
+      de: "Nutze unser kostenloses online Tool um einfach und schnell ein simples NDA (basierend auf oneNDA) zwischen zwei Parteien zu erstellen."
+      en: "Use our free online tool to easily and quickly create a simple NDA (based on oneNDA) between two parties."
   features:
     de:
       - faster:
